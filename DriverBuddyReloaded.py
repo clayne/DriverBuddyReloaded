@@ -428,6 +428,7 @@ class DriverBuddyPlugin(idaapi.plugin_t):
         :return:
         """
         try:
+            pool = None
             with open(analysis_file_name, "w") as log_file:
                 print("\nDriver Buddy Reloaded Auto-analysis\n"
                       "-----------------------------------------------")
